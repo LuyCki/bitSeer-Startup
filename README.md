@@ -1,6 +1,8 @@
 # BitSeer
 ![](./assets/bitSeerLogo.PNG "Logo")
 
+[GitHub Repository](https://github.com/LuyCki/bitSeer-Startup)
+
 A personal project that one day will become my software development startup.
 
 For now, it's just the presentation layer `(UI)` and the server that handle the `Authentication`, `Authorization`, and `Encryption` and will `easy support` adding future features.
