@@ -1,0 +1,6 @@
+{
+  "csscomb.preset": ".vscode/css-config.json",
+  "csscomb.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}

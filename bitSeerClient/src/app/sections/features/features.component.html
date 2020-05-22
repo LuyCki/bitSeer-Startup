@@ -1,0 +1,56 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="font-weight-bold">Our Design Process</h3>
+        <p class="feature-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam
+          laborum, ducimus, laboriosam sint dolorum aspernatur libero.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="features-wrapper" [ngsRevealSet]="scrollRevealFeaturesConfig" [ngsSelector]="'.card'">
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/analysis.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Analysis</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/design.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Design</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/coding.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Coding</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/testing.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Testing</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/launch.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Launch</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <svg-icon src="../../../assets/features/maintenance.svg" [svgStyle]="svgFeaturesStyle"></svg-icon>
+              <h4 class="card-text">Maintenance</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div [ngsReveal]="scrollRevealFeatureImageConfig" class="col-lg-6 feature-image-wrapper">
+        <img class="img-fluid" src="../../../assets/features/feature.png">
+      </div>
+    </div>
+  </div>
+</section>

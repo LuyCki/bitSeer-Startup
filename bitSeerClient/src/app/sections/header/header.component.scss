@@ -1,0 +1,50 @@
+.navbar {
+  z-index: 999;
+  padding: 22px 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-color: #f44336;
+}
+
+.navbar-wrapper {
+  padding: 8px;
+}
+
+.brand-logo {
+  width: 120px;
+}
+
+.navbar-sticky {
+  padding: 0;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.profile-button {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}

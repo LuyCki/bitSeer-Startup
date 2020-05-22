@@ -1,0 +1,24 @@
+<nav [ngClass]="{'navbar-sticky': isHeaderScrolled}" class="navbar navbar-dark fixed-top">
+  <particles *ngIf="isHeaderScrolled" [params]="offerParticleParams" [style]="offerParticleStyle"></particles>
+  <div class="container navbar-wrapper">
+    <a class="" href="#">
+      <img class="brand-logo" src="../../assets/bitSeer-logo.png">
+    </a>
+
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item" *ngIf="userService.currentUser | async as user">
+        <h6 class="profile-name"> {{ user.firstName }}
+          {{ user.lastName }} </h6>
+        <div class="profile-menu" dropdown placement="bottom right">
+          <button class="profile-button" type="button" dropdownToggle>
+            <svg-icon src="../../../assets/header/account.svg" [svgStyle]="svgHeaderStyle"></svg-icon>
+          </button>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+            aria-labelledby="button-basic">
+            <li (click)="logout()" role="menuitem"><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

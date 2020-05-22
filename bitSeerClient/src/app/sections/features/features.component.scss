@@ -1,0 +1,43 @@
+.features-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  min-width: 160px;
+  min-height: 120px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.feature-info {
+  max-width: 600px;
+  color: #47404f;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.feature-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 70%;
+}
+
+.card-icon {
+  width: 32px;
+}
+
+.card-text {
+  margin-top: 8px;
+  color: #332e38;
+  font-size: 18px;
+}

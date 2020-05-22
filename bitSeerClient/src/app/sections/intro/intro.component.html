@@ -1,0 +1,75 @@
+<section class="intro">
+  <main class="container">
+    <div class="row">
+      <div class="col-md-6 intro-text">
+        <h1 class="intro-title">Software Development Services</h1>
+        <p class="intro-info">Build your next generation of IT solutions with us to create a solid software foundation
+          to your business.</p>
+        <div *ngIf="!(userService.currentUser | async)" class="login-buttons-wrapper">
+          <button (click)="openModal(loginModal)" class="btn mr-3 sign-button signIn-button">SIGN IN</button>
+          <button (click)="openModal(registerModal)" class="btn sign-button signUp-button">SIGN UP</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <carousel interval="3000" (activeSlide)="0" showIndicators="false">
+          <slide class="animated fadeIn" *ngFor="let slide of slides; let index=index">
+            <img class="img-fluid intro-image mt-2" [src]="slide.image" alt="">
+          </slide>
+        </carousel>
+      </div>
+    </div>
+  </main>
+</section>
+
+<ng-template #loginModal>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Login</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="loginInputEmail">Email address</label>
+        <input #loginEmail type="email" class="form-control" id="loginInputEmail">
+      </div>
+      <div class="form-group">
+        <label for="loginInputPassword">Password</label>
+        <input #loginPassowrd type="password" class="form-control" id="loginInputPassword">
+      </div>
+      <button type="button" (click)="login(loginEmail.value, loginPassowrd.value)" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</ng-template>
+
+
+<ng-template #registerModal>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Register</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="registerInputEmail">Email address</label>
+        <input #registerEmail type="email" class="form-control" id="registerInputEmail">
+      </div>
+      <div class="form-group">
+        <label for="firstNameInput">First Name</label>
+        <input #firstName type="text" class="form-control" id="firstNameInput">
+      </div>
+      <div class="form-group">
+        <label for="lastNameInput">Last Name</label>
+        <input #lastName type="text" class="form-control" id="lastNameInput">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input #registerPassword type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="button" (click)="register(firstName.value, lastName.value, registerEmail.value, registerPassword.value)" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</ng-template>

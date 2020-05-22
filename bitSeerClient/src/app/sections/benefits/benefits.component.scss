@@ -1,0 +1,32 @@
+.benefits {
+  background: #f8f9fa;
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefits-info {
+  max-width: 600px;
+  color: #47404f;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.benefits-text {
+  margin-left: 30px;
+}
+
+.card {
+  overflow: hidden;
+  width: 530px;
+  height: 145px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
