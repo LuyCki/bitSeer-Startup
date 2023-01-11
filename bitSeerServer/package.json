@@ -35,7 +35,7 @@
     "@types/passport-jwt": "^3.0.3",
     "bcrypt": "^3.0.7",
     "class-transformer": "^0.2.3",
-    "class-validator": "^0.10.2",
+    "class-validator": "^0.14.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.17.1",
     "passport": "^0.4.1",
